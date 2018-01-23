@@ -15,9 +15,9 @@ public class Bestelling {
         bestellingMap.put(eenTegel,aantal);
     }
     
-    public int getOppervlakte(){
+    public double getOppervlakte(){
         return bestellingMap.keySet().stream()
-                                     .mapToInt(eenTegel -> eenTegel.getOppervlakte()*bestellingMap.get(eenTegel))
+                                     .mapToDouble(eenTegel -> eenTegel.getOppervlakte()*bestellingMap.get(eenTegel))
                                      .sum();    
     }
     

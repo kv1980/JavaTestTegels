@@ -4,8 +4,9 @@ import java.math.BigDecimal;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Bestelling {
-    private Map<Tegel,Integer> bestellingMap = new HashMap<>();
+// Bestellingetje
+public class Bestelling { 
+    private final Map<Tegel,Integer> bestellingMap = new HashMap<>();
     
     public void detailToevoegen(Tegel eenTegel, int aantal){
         bestellingMap.put(eenTegel,aantal);

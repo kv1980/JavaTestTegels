@@ -13,5 +13,5 @@ public abstract class Tegel {
         return prijs;
     }
     
-    public abstract int getOppervlakte();
+    public abstract double getOppervlakte();
 }

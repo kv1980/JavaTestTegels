@@ -3,15 +3,15 @@ package be.vdab;
 import java.math.BigDecimal;
 
 public class VierkanteTegel extends Tegel {
-    private final int zijde;
+    private final double zijde;
 
-    public VierkanteTegel(BigDecimal prijs, int zijde) {
+    public VierkanteTegel(BigDecimal prijs, double zijde) {
         super(prijs);
         this.zijde = zijde;
     }
 
     @Override
-    public int getOppervlakte() {
+    public double getOppervlakte() {
         return zijde*zijde;
     }
 }

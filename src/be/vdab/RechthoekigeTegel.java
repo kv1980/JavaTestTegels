@@ -3,17 +3,17 @@ package be.vdab;
 import java.math.BigDecimal;
 
 public class RechthoekigeTegel extends Tegel {
-    private final int lengte;
-    private final int breedte;
+    private final double lengte;
+    private final double breedte;
 
-    public RechthoekigeTegel(BigDecimal prijs, int lengte, int breedte) {
+    public RechthoekigeTegel(BigDecimal prijs, double lengte, double breedte) {
         super(prijs);
         this.lengte = lengte;
         this.breedte = breedte;
     }
 
     @Override
-    public int getOppervlakte() {
+    public double getOppervlakte() {
         return lengte*breedte;
     }
 }
